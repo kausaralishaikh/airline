@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TowardsSky - Elevate Your Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TowardsSky</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book">Book</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#loyalty">Skywards</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+                <button id="loginBtn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Soar Beyond Expectations</h1>
+            <p>Experience luxury at 40,000 feet</p>
+        </section>
+
+        <section id="book" class="booking">
+            <h2>Book Your Journey</h2>
+            <form id="bookingForm">
+                <input type="text" id="from" placeholder="From" required>
+                <input type="text" id="to" placeholder="To" required>
+                <input type="date" id="departure" required>
+                <input type="date" id="return">
+                <select id="passengers">
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4+ Passengers</option>
+                </select>
+                <select id="class">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First Class</option>
+                </select>
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+
+        <section id="destinations" class="destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Dubai">
+                    <h3>Dubai</h3>
+                    <p>Experience luxury in the desert</p>
+                    <button>Explore</button>
+                </div>
+                <div class="destination-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <p>Paradise on Earth</p>
+                    <button>Explore</button>
+                </div>
+                <div class="destination-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                    <p>Where tradition meets future</p>
+                    <button>Explore</button>
+                </div>
+                <div class="destination-card">
+                    <img src="https://via.placeholder.com/300x200" alt="New York">
+                    <h3>New York</h3>
+                    <p>The city that never sleeps</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>The TowardsSky Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Gourmet Dining</h3>
+                    <p>Savor world-class cuisine at 40,000 feet</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Luxurious Comfort</h3>
+                    <p>Relax in our spacious, ergonomic seats</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-film"></i>
+                    <h3>In-flight Entertainment</h3>
+                    <p>Enjoy thousands of hours of movies and shows</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Stay Connected</h3>
+                    <p>High-speed Wi-Fi available on all flights</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="loyalty" class="loyalty">
+            <h2>TowardsSky Skywards</h2>
+            <p>Join our loyalty program and enjoy exclusive benefits, upgrades, and rewards on every journey.</p>
+            <button id="joinLoyalty">Join Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#book">Book</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#loyalty">Skywards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@towardssky.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 TowardsSky. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
